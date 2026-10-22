@@ -32,7 +32,7 @@ Tambahkan screenshot hasil kalkulator yang sudah dijalankan di browser pada bagi
 
 ![Screenshot](Screenshot/Hasil1.png)
 
-Eksperimen Mandiri JavaScript
+# Eksperimen Mandiri JavaScript
 
 ## Deskripsi
 Eksperimen Mandiri ini bertujuan untuk memahami dasar-dasar JavaScript melalui beberapa latihan, mulai dari menerima input, menggunakan perulangan dan function, melakukan validasi form, menghitung harga menu, hingga menampilkan dan menyembunyikan elemen HTML.
