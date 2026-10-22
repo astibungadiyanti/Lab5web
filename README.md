@@ -32,7 +32,142 @@ Tambahkan screenshot hasil kalkulator yang sudah dijalankan di browser pada bagi
 
 ![Screenshot](Screenshot/Hasil1.png)
 
+Eksperimen Mandiri JavaScript
 
+## Deskripsi
+Eksperimen Mandiri ini bertujuan untuk memahami dasar-dasar JavaScript melalui beberapa latihan, mulai dari menerima input, menggunakan perulangan dan function, melakukan validasi form, menghitung harga menu, hingga menampilkan dan menyembunyikan elemen HTML.
+
+Setiap latihan menggunakan dua file, yaitu HTML dan JavaScript, serta dilengkapi bukti hasil program yang dijalankan di browser.
+
+## 1. Menerima Dua Nilai dari Prompt
+
+**Tujuan:** Mengubah Latihan 3 agar menerima dua nilai melalui `prompt()` dan mengonversinya menjadi tipe data `number`.
+
+**Langkah-langkah:**
+1. Membuat file `latihan1.html`.
+2. Membuat file `latihan1.js`.
+3. Menggunakan `prompt()` untuk meminta dua nilai.
+4. Mengonversi kedua nilai menggunakan `Number()`.
+5. Menampilkan hasil penjumlahan di halaman browser.
+
+**Bukti Hasil:**
+![Screenshot](Screenshot/Hasil%20Ekperimen_1.png)
+
+*Keterangan: Tampilan prompt untuk memasukkan dua angka dan hasil penjumlahannya.*
+
+## 2. Menampilkan Tabel Perkalian Angka 7
+
+**Tujuan:** Membuat perulangan untuk menampilkan perkalian angka 7 dari 1 sampai 10.
+
+**Langkah-langkah:**
+1. Membuat file `latihan7.html`.
+2. Membuat file `latihan7.js`.
+3. Menggunakan perulangan `for` dari angka 1 sampai 10.
+4. Menampilkan hasil perkalian di browser.
+
+**Bukti Hasil:**
+
+![Screenshot](Screenshot/Hasil%20Ekperiman_7.png)
+
+*Keterangan: Tabel perkalian angka 7 dari 1 sampai 10.*
+
+## 3. Membuat Function Cek Bilangan Genap
+
+**Tujuan:** Membuat function `cekGenap(angka)` yang mengembalikan `true` jika angka genap.
+
+**Langkah-langkah:**
+1. Membuat file `latihan8.html`.
+2. Membuat file `latihan8.js`.
+3. Membuat function `cekGenap(angka)` menggunakan operator modulo `%`.
+4. Memasukkan angka melalui kolom input.
+5. Menampilkan keterangan bilangan genap atau ganjil.
+
+**Bukti Hasil:**
+
+![Screenshot](Screenshot/Hasil%20Ekperimen_8.png)
+
+*Keterangan: Hasil pengecekan angka yang dimasukkan oleh pengguna.*
+
+## 4. Menambahkan Validasi Form
+
+**Tujuan:** Memastikan setiap kolom pada form harus diisi sebelum data diproses.
+
+**Langkah-langkah:**
+1. Membuat file `latihan9.html`.
+2. Membuat file `latihan9.js`.
+3. Membuat form data mahasiswa yang berisi nama dan NIM.
+4. Menambahkan validasi menggunakan kondisi `if`.
+5. Menampilkan pesan jika kolom kosong atau jika data berhasil dikirim.
+
+**Bukti Hasil:**
+
+![Screenshot](Screenshot/Hasil%20%20Wkperimen_9.png)
+
+*Keterangan: Pesan validasi ketika kolom belum diisi atau hasil ketika data berhasil dikirim.*
+
+## 5. Menambahkan Pilihan Menu dan Harga
+
+**Tujuan:** Menambahkan minimal dua pilihan menu beserta harganya dan menghitung total pesanan.
+
+**Langkah-langkah:**
+1. Membuat file `latihan10.html`.
+2. Membuat file `latihan10.js`.
+3. Menambahkan pilihan menu dan harga.
+4. Memasukkan jumlah pesanan.
+5. Menghitung total harga berdasarkan menu dan jumlah yang dipilih.
+
+**Bukti Hasil:**
+
+![Screenshot](Screenshot/Hasil%20Ekperimen_10.png)
+
+*Keterangan: Tampilan pilihan menu, jumlah pesanan, dan total harga.*
+
+## 6. Menyembunyikan dan Menampilkan Elemen HTML
+
+**Tujuan:** Menggunakan tombol untuk menyembunyikan atau menampilkan elemen HTML.
+
+**Langkah-langkah:**
+1. Membuat file `latihan11.html`.
+2. Membuat file `latihan11.js`.
+3. Menambahkan tombol dan elemen teks.
+4. Menggunakan JavaScript untuk mengubah properti `display`.
+5. Mengklik tombol untuk menyembunyikan dan menampilkan teks.
+
+**Bukti Hasil:**
+
+![Screenshot](Screenshot/Hasil%20Eksperimen_11.png)
+
+*Keterangan: Tampilan halaman ketika elemen disembunyikan dan ditampilkan kembali.*
+
+## Struktur Folder
+
+```text
+EksperimenMandiri/
+├── README.md
+├── latihan1.html
+├── latihan1.js
+├── latihan7.html
+├── latihan7.js
+├── latihan8.html
+├── latihan8.js
+├── latihan9.html
+├── latihan9.js
+├── latihan10.html
+├── latihan10.js
+├── latihan11.html
+├── latihan11.js
+└── screenshots/
+    ├── latihan1.png
+    ├── latihan7.png
+    ├── latihan8.png
+    ├── latihan9.png
+    ├── latihan10.png
+    └── latihan11.png
+```
+
+## Kesimpulan
+
+Melalui eksperimen ini, saya mempelajari penggunaan input, konversi tipe data, perulangan, function, validasi form, pengolahan harga, dan manipulasi elemen HTML menggunakan JavaScript. Setiap eksperimen diuji melalui browser untuk memastikan program berjalan sesuai tujuan.
 
 # Praktikum JavaScript — Kalkulator
 
