@@ -1,4 +1,4 @@
-# Praktikum JavaScript — Latihan 1: Menampilkan Output Hello World
+ # Praktikum JavaScript — Latihan 1: Menampilkan Output Hello World
 
 ## Tujuan Praktikum
 
