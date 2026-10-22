@@ -53,3 +53,84 @@ Kalkulator dapat menerima input angka, melakukan operasi matematika dasar, dan m
 Tambahkan screenshot hasil kalkulator yang sudah dijalankan di browser pada bagian ini.
 
 ![Screenshot](Screenshot/Hasil.png)
+
+# H. Pertanyaan dan Tugas
+
+## 1. Perbedaan console.log(), alert(), prompt(), dan textContent/innerHTML
+- `console.log()` menampilkan informasi di Console.
+- `alert()` menampilkan pesan kepada pengguna.
+- `prompt()` meminta input dari pengguna.
+- `textContent` mengubah teks HTML, sedangkan `innerHTML` mengubah isi HTML termasuk tag.
+
+## 2. Perbedaan let dan const
+`let` digunakan untuk variabel yang nilainya dapat diubah, sedangkan `const` tidak dapat ditetapkan ulang.
+
+```javascript
+let umur = 18;
+umur = 19;
+const nama = "Budi";
+```
+
+## 3. Perbedaan operator == dan ===
+`==` membandingkan nilai dengan kemungkinan konversi tipe data, sedangkan `===` membandingkan nilai dan tipe data.
+
+```javascript
+console.log(5 == "5");  // true
+console.log(5 === "5"); // false
+```
+
+## 4. Fungsi if–else dan switch
+`if–else` digunakan untuk memeriksa kondisi, sedangkan `switch` digunakan untuk memilih tindakan berdasarkan beberapa pilihan nilai.
+
+## 5. Fungsi parameter dan return
+Parameter menerima data masukan, sedangkan `return` mengembalikan hasil dari fungsi.
+
+```javascript
+function tambah(a, b) {
+  return a + b;
+}
+console.log(tambah(2, 3));
+```
+
+## 6. Fungsi document.getElementById()
+Digunakan untuk memilih elemen HTML berdasarkan ID agar dapat diubah menggunakan JavaScript.
+
+```javascript
+document.getElementById("pesan").textContent = "Halo Dunia";
+```
+
+## 7. Script validasi form
+Kode HTML:
+
+```html
+<form id="form">
+  <input type="text" id="nama" placeholder="Nama">
+  <input type="number" id="nilai" placeholder="Nilai">
+  <button type="submit">Kirim</button>
+</form>
+<p id="hasil"></p>
+<script src="script.js"></script>
+```
+
+Kode JavaScript (`script.js`):
+
+```javascript
+document.getElementById("form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nama = document.getElementById("nama").value.trim();
+  const inputNilai = document.getElementById("nilai").value;
+  const nilai = Number(inputNilai);
+  const hasil = document.getElementById("hasil");
+
+  if (nama === "" || inputNilai.trim() === "") {
+    hasil.textContent = "Semua kolom wajib diisi.";
+  } else if (!Number.isFinite(nilai) || nilai < 0 || nilai > 100) {
+    hasil.textContent = "Nilai harus antara 0–100.";
+  } else {
+    hasil.textContent = "Data valid.";
+  }
+});
+```
+
+**Penjelasan:** Program memeriksa apakah nama dan nilai sudah diisi. Nilai harus berupa angka antara 0 sampai 100. Jika semua ketentuan terpenuhi, pesan "Data valid" akan ditampilkan.
